@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import uz.pdp.appclickup.entity.template.AbsEntity;
+import uz.pdp.appclickup.entity.template.AbsLongEntity;
 
 import java.sql.Timestamp;
 
@@ -17,7 +18,7 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class WorkSpaceUser extends AbsEntity {
+public class WorkSpaceUser extends AbsLongEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private WorkSpace workSpace;
